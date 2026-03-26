@@ -1,8 +1,0 @@
-Downloading cpython-3.14.3-linux-x86_64-musl (download) (27.9MiB)
- Downloaded cpython-3.14.3-linux-x86_64-musl (download)
-Using CPython 3.14.3
-Removed virtual environment at: /home/dagu/dagu/.venv
-Creating virtual environment at: /home/dagu/dagu/.venv
-error: Distribution `playwright==1.58.0 @ registry+https://pypi.org/simple` can't be installed because it doesn't have a source distribution or wheel for the current platform
-
-hint: You're on Linux (`linux_x86_64`), but `playwright` (v1.58.0) only has wheels for the following platforms: `manylinux_2_17_aarch64`, `manylinux1_x86_64`, `manylinux2014_aarch64`, `macosx_10_13_x86_64`, `macosx_11_0_arm64`, `macosx_11_0_universal2`, `win32`, `win_amd64`, `win_arm64`; consider adding "sys_platform == 'linux' and platform_machine == 'x86_64'" to `tool.uv.required-environments` to ensure uv resolves to a version with compatible wheels
