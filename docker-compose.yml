@@ -1,0 +1,31 @@
+services:
+  db:
+    image: postgres:15
+    container_name: job_tracker_db
+    restart: always
+    environment:
+      POSTGRES_USER: user_data
+      POSTGRES_PASSWORD: password_data
+      POSTGRES_DB: jobs_db
+    ports:
+      - "5432:5432"
+
+  dagu:
+    build: .
+    container_name: job_orchestrator
+    restart: always
+    ports:
+      - "8081:8080"
+    volumes:
+      - .:/home/dagu/dagu/
+    environment:
+      - DAGU_HOME=/home/dagu/dagu/
+
+  adminer:
+    image: adminer
+    container_name: db_ui
+    ports:
+      - "8080:8080"
+
+volumes:
+  postgres_data:

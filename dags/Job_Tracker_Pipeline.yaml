@@ -1,0 +1,14 @@
+name: Job_Tracker_Pipeline
+description: "Pipeline ETL Job Tracker"
+schedule: "0 8 * * *"
+
+steps:
+  - name: Extraction_APEC
+    # On lance python3 directement sur le nom du fichier
+    command: "python3 scrape_indeed.py"
+    # On force Dagu à se mettre dans le dossier où se trouve le script
+    dir: "/home/dagu/dagu/dags"
+
+  - name: Chargement_SQL
+    command: "python3 load_to_db.py"
+    dir: "/home/dagu/dagu/dags"

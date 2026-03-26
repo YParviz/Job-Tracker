@@ -1,0 +1,6 @@
+time=2026-03-09T20:30:03.347+03:00 level=INFO msg="dag-run started" dag=Job_Tracker_Pipeline dagRunId=019cd3a6-1594-708a-b082-093d2d6c59af name=Job_Tracker_Pipeline dagRunId=019cd3a6-1594-708a-b082-093d2d6c59af attemptID=d5b97e params=[]
+time=2026-03-09T20:30:03.356+03:00 level=INFO msg="Step started" dag=Job_Tracker_Pipeline dagRunId=019cd3a6-1594-708a-b082-093d2d6c59af step=Extraction_APEC
+time=2026-03-09T20:30:03.358+03:00 level=INFO msg="Step finished" dag=Job_Tracker_Pipeline dagRunId=019cd3a6-1594-708a-b082-093d2d6c59af step=Extraction_APEC status=running
+time=2026-03-09T20:30:35.496+03:00 level=INFO msg="Step finished" dag=Job_Tracker_Pipeline dagRunId=019cd3a6-1594-708a-b082-093d2d6c59af step=Extraction_APEC status=failed
+time=2026-03-09T20:30:35.660+03:00 level=INFO msg="dag-run finished" dag=Job_Tracker_Pipeline dagRunId=019cd3a6-1594-708a-b082-093d2d6c59af name=Job_Tracker_Pipeline dagRunId=019cd3a6-1594-708a-b082-093d2d6c59af attemptID=d5b97e status=failed startedAt=2026-03-09T20:30:03+03:00 finishedAt=2026-03-09T20:30:35+03:00
+time=2026-03-09T20:30:35.923+03:00 level=ERROR msg="Failed to execute dag-run" dag=Job_Tracker_Pipeline dagRunId=019cd3a6-1594-708a-b082-093d2d6c59af err="failed to execute step \"Extraction_APEC\": exit status 2"
